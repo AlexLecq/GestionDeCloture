@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet.ServiceWindows.Gesti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet.ServiceWindows.GestionCloture.Lib", "Projet.ServiceWindows.GestionCloture.Lib\Projet.ServiceWindows.GestionCloture.Lib.csproj", "{C8304BAD-B2E3-4215-BB52-5561EE77482A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet.ServiceWindows.GestionCloture.Hangfire", "Projet.ServiceWindows.GestionCloture.Hangfire\Projet.ServiceWindows.GestionCloture.Hangfire.csproj", "{FB2A01E0-E838-46DF-AA5C-C4F5783CEF21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet.ServiceWindows.GestionCloture.Hangfire", "Projet.ServiceWindows.GestionCloture.Hangfire\Projet.ServiceWindows.GestionCloture.Hangfire.csproj", "{E9CC4280-E4D0-40F5-82D4-6433459A9638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C8304BAD-B2E3-4215-BB52-5561EE77482A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8304BAD-B2E3-4215-BB52-5561EE77482A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8304BAD-B2E3-4215-BB52-5561EE77482A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB2A01E0-E838-46DF-AA5C-C4F5783CEF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB2A01E0-E838-46DF-AA5C-C4F5783CEF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB2A01E0-E838-46DF-AA5C-C4F5783CEF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB2A01E0-E838-46DF-AA5C-C4F5783CEF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9CC4280-E4D0-40F5-82D4-6433459A9638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9CC4280-E4D0-40F5-82D4-6433459A9638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9CC4280-E4D0-40F5-82D4-6433459A9638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9CC4280-E4D0-40F5-82D4-6433459A9638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

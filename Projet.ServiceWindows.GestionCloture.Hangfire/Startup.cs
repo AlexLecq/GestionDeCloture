@@ -1,15 +1,15 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hangfire;
+using Hangfire.Annotations;
+using Hangfire.Dashboard;
+using Hangfire.MySql;
+using Hangfire.MySql.Core;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Projet.ServiceWindows.GestionCloture.Hangfire.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,31 +17,24 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
 {
     public class Startup
     {
+
+        public IConfiguration config;
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            config = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
+
+            
+            services.AddHangfire((n) => 
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+
+                n.UseStorage(new MySqlStorage(config.GetConnectionString("MySqlConnection")));
             });
-
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,21 +43,29 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
-            else
+
+            List<IDashboardAuthorizationFilter> filters = new List<IDashboardAuthorizationFilter>();
+            filters.Add(new DontUseThisAuthorizationFilter());
+            app.UseHangfireDashboard("/hangfire", new DashboardOptions { Authorization = filters });
+
+            var options = new BackgroundJobServerOptions
             {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
-
-            app.UseAuthentication();
+                Queues = new[] { "critical", "default" },
+                WorkerCount = 3
+            };
+            app.UseHangfireServer(options);
 
             app.UseMvc();
+
+        }
+    }
+
+    public class DontUseThisAuthorizationFilter : IDashboardAuthorizationFilter
+    {
+        public bool Authorize([NotNull] DashboardContext context)
+        {
+            return true;
         }
     }
 }
