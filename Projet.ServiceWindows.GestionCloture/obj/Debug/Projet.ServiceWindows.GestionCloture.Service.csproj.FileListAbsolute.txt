@@ -1,0 +1,10 @@
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe.config
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.Service.csprojAssemblyReference.cache
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.GestionCloture.resources
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.ProjectInstaller.resources
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.Service.csproj.GenerateResource.cache
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.Service.csproj.CoreCompileInputs.cache
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.exe
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.pdb
