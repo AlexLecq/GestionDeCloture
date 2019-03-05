@@ -1,4 +1,7 @@
-﻿using Projet.ServiceWindows.GestionCloture.Tools;
+﻿using Hangfire;
+using Hangfire.MySql.Core;
+using Projet.ServiceWindows.GestionCloture.Tools;
+using Projet.ServiceWindows.GestionCloture;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,38 +11,40 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
 namespace Projet.ServiceWindows.GestionCloture
 {
     public partial class GestionCloture : ServiceBase
     {
-        private EventLog eventLog1;
+        public BackgroundJobServer server;
 
         public GestionCloture()
         {
             InitializeComponent();
 
-            string keyName = "ServiceGestionCloture";
-            eventLog1 = new EventLog();
+            
+            GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString));
 
-            ToolsBox.CreateKeyEventLog(keyName);
-
-            if (!EventLog.SourceExists(keyName))
-            {
-                EventLog.CreateEventSource(
-                    keyName, "logEvent");
-            }
-            eventLog1.Source = keyName;
-            eventLog1.Log = "logEvent";
         }
 
         protected override void OnStart(string[] args)
         {
-            eventLog1.WriteEntry("Service on start !");
+            var options = new BackgroundJobServerOptions
+            {
+                Queues = new[] { "critical", "default" },
+                WorkerCount = 3
+            };
+            server = new BackgroundJobServer(options);
+
+            BackgroundJob.Enqueue(() => ToolsBox.GetName());
         }
 
         protected override void OnStop()
         {
+            server.Dispose();
         }
+
     }
 }

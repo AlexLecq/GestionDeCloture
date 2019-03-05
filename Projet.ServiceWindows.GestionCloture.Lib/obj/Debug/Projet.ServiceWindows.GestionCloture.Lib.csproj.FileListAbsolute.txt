@@ -4,7 +4,6 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\MySql.Data.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Google.Protobuf.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\MySql.Data.xml
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.csprojAssemblyReference.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.csproj.CoreCompileInputs.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.dll

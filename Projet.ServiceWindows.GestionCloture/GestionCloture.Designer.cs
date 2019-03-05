@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            // 
-            // GestionCloture
-            // 
-            this.ServiceName = "GestionCloture";
-
+           
         }
 
         #endregion
+
     }
 }

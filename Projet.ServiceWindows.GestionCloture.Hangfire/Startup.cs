@@ -19,7 +19,7 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
     {
 
         public IConfiguration config;
-
+        public static string MySqlConnectionString;
         public Startup(IConfiguration configuration)
         {
             config = configuration;
@@ -28,12 +28,8 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
         public void ConfigureServices(IServiceCollection services)
         {
 
-            
-            services.AddHangfire((n) => 
-            {
-
-                n.UseStorage(new MySqlStorage(config.GetConnectionString("MySqlConnection")));
-            });
+            MySqlConnectionString = config.GetConnectionString("MySqlConnection");
+            services.AddHangfire((n) => n.UseStorage(new MySqlStorage(MySqlConnectionString)));
             services.AddMvc();
         }
 
@@ -48,13 +44,6 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
             List<IDashboardAuthorizationFilter> filters = new List<IDashboardAuthorizationFilter>();
             filters.Add(new DontUseThisAuthorizationFilter());
             app.UseHangfireDashboard("/hangfire", new DashboardOptions { Authorization = filters });
-
-            var options = new BackgroundJobServerOptions
-            {
-                Queues = new[] { "critical", "default" },
-                WorkerCount = 3
-            };
-            app.UseHangfireServer(options);
 
             app.UseMvc();
 
