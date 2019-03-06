@@ -19,7 +19,6 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
     {
 
         public IConfiguration config;
-        public static string MySqlConnectionString;
         public Startup(IConfiguration configuration)
         {
             config = configuration;
@@ -27,9 +26,7 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            MySqlConnectionString = config.GetConnectionString("MySqlConnection");
-            services.AddHangfire((n) => n.UseStorage(new MySqlStorage(MySqlConnectionString)));
+            services.AddHangfire((n) => n.UseStorage(new MySqlStorage(config.GetConnectionString("ConnectToHangfire"))));
             services.AddMvc();
         }
 

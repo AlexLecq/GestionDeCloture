@@ -11,7 +11,8 @@ namespace Projet.ServiceWindows.GestionCloture.ServiceTestApp
     {
         static void Main(string[] args)
         {
-            AccessMySql.GetInstance("Server=localhost;Database=gsb_frais;Allow User Variables=true;Uid=userGsb;Pwd=secret");
+            AccessMySql myAccess = AccessMySql.GetInstance("Server=localhost;Database=gsb_frais;Allow User Variables=true;Uid=userGsb;Pwd=secret");
+            myAccess.ExecuteQuery("SELECT * FROM visiteur");
             Console.ReadLine();
         }
     }

@@ -11,4 +11,3 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.pdb
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.pdb
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.csprojAssemblyReference.cache

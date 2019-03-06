@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Projet.ServiceWindows.GestionCloture.Classe
 {
@@ -47,24 +49,46 @@ namespace Projet.ServiceWindows.GestionCloture.Classe
             
         }
 
-        private MySqlDataReader ExecuteQuery(string queryString)
+        /// <summary>
+        /// Permet d'exécuter les requêtes vers la BDD
+        /// </summary>
+        /// <param name="queryString"></param>
+        public void ExecuteQuery(string queryString)
         {
-            MySqlCommand command = _connect.CreateCommand();
-            command.CommandText = queryString;
-
-            try
+            using(MySqlCommand command = _connect.CreateCommand())
             {
-                _connect.Open();
-                if (_connect.State == System.Data.ConnectionState.Executing)
-                    Console.WriteLine("Lâ requête est en cours d'exécution ..");
+                command.CommandText = queryString;
 
-                if (_connect.State == System.Data.ConnectionState.Open)
-                    Console.WriteLine("Lâ requête s'est exécuté avec succès !");
-            }
-            catch (MySqlException e)
-            {
-                Console.WriteLine(e.Message, e.StackTrace, e.ErrorCode);
-            }
+                try
+                {
+                    _connect.Open();
+                    if (_connect.State == System.Data.ConnectionState.Executing)
+                        Console.WriteLine("Lâ requête est en cours d'exécution ..");
+
+                    if (_connect.State == System.Data.ConnectionState.Open)
+                        Console.WriteLine("Lâ requête s'est exécuté avec succès !");
+                }
+                catch (MySqlException e)
+                {
+                    _connect.Dispose();
+                    Console.WriteLine(e.Message, e.StackTrace, e.ErrorCode);
+                }
+
+                MySqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            Console.Write(string.Format("- {0} : {1} ", reader.GetName(i), reader.GetString(i)));
+                        }
+                        Console.WriteLine();
+                    }
+                }
+
+                reader.Close();
+            } 
         }
     }
 }

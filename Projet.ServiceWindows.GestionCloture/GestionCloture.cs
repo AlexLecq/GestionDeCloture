@@ -13,20 +13,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using Microsoft.Extensions.Configuration;
+using Projet.ServiceWindows.GestionCloture.Classe;
 
 namespace Projet.ServiceWindows.GestionCloture
 {
     public partial class GestionCloture : ServiceBase
     {
         public BackgroundJobServer server;
+        private AccessMySql myAccess;
 
         public GestionCloture()
         {
             InitializeComponent();
 
             //Configuration du Hangfire
-            GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString));
-
+            GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["ConnectToHangfire"].ConnectionString));
+            myAccess = AccessMySql.GetInstance(ConfigurationManager.ConnectionStrings["ConnectToGsbFrais"].ConnectionString);
         }
 
         protected override void OnStart(string[] args)
@@ -39,6 +41,7 @@ namespace Projet.ServiceWindows.GestionCloture
                 WorkerCount = 3
             };
             server = new BackgroundJobServer(options);
+
 
         }
 
