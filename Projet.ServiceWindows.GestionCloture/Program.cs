@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Owin.Hosting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceProcess;
@@ -14,12 +15,16 @@ namespace Projet.ServiceWindows.GestionCloture
         /// </summary>
         static void Main()
         {
+           
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
                 new GestionCloture()
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(ServicesToRun);  
+            
         }
     }
+
+
 }

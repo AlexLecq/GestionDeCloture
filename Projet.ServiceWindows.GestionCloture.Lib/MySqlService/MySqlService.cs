@@ -9,19 +9,18 @@ using System.Windows.Forms;
 
 namespace Projet.ServiceWindows.GestionCloture.Classe
 {
-    public class AccessMySql
+    public class MySqlService
     {
         /// <summary>
         /// Propriétés de la classe AccessMySql
         /// </summary>
         private MySqlConnection _connect;
-        private static AccessMySql _instance;
 
         /// <summary>
         /// Constructeur privée de la classe 
         /// </summary>
         /// <param name="connectString"></param>
-        private AccessMySql(string connectString)
+        protected MySqlService(string connectString)
         {
             try
             {
@@ -35,25 +34,10 @@ namespace Projet.ServiceWindows.GestionCloture.Classe
         }
 
         /// <summary>
-        /// Récupération de l'unique instance de la classe
-        /// </summary>
-        /// <param name="connectString"></param>
-        /// <returns></returns>
-        public static AccessMySql GetInstance(string connectString)
-        {
-            return _instance == null ? _instance = new AccessMySql(connectString) : _instance;
-        }
-
-        public void GetAllTable()
-        {
-            
-        }
-
-        /// <summary>
         /// Permet d'exécuter les requêtes vers la BDD
         /// </summary>
         /// <param name="queryString"></param>
-        public void ExecuteQuery(string queryString)
+        protected List<Dictionary<string,string>> ExecuteQuery(string queryString)
         {
             using(MySqlCommand command = _connect.CreateCommand())
             {
@@ -62,8 +46,6 @@ namespace Projet.ServiceWindows.GestionCloture.Classe
                 try
                 {
                     _connect.Open();
-                    if (_connect.State == System.Data.ConnectionState.Executing)
-                        Console.WriteLine("Lâ requête est en cours d'exécution ..");
 
                     if (_connect.State == System.Data.ConnectionState.Open)
                         Console.WriteLine("Lâ requête s'est exécuté avec succès !");
@@ -74,20 +56,25 @@ namespace Projet.ServiceWindows.GestionCloture.Classe
                     Console.WriteLine(e.Message, e.StackTrace, e.ErrorCode);
                 }
 
+                List<Dictionary<string, string>> result = null;
                 MySqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
+                    Dictionary<string, string> uneLigne = null;
+                    result = new List<Dictionary<string, string>>();
                     while (reader.Read())
                     {
+                        uneLigne = new Dictionary<string, string>();
                         for (int i = 0; i < reader.FieldCount; i++)
                         {
-                            Console.Write(string.Format("- {0} : {1} ", reader.GetName(i), reader.GetString(i)));
+                            uneLigne.Add(reader.GetName(i), reader.GetString(i));
                         }
-                        Console.WriteLine();
+                        result.Add(uneLigne);
                     }
                 }
-
+                _connect.Close();
                 reader.Close();
+                return result;
             } 
         }
     }

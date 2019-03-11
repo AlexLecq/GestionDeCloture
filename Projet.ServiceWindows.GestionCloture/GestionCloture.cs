@@ -1,6 +1,5 @@
 ﻿using Hangfire;
 using Hangfire.MySql.Core;
-using Projet.ServiceWindows.GestionCloture.Tools;
 using Projet.ServiceWindows.GestionCloture;
 using System;
 using System.Collections.Generic;
@@ -12,15 +11,19 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Microsoft.Owin.Hosting;
 using Microsoft.Extensions.Configuration;
 using Projet.ServiceWindows.GestionCloture.Classe;
+using Projet.ServiceWindows.GestionCloture.Controllers;
 
 namespace Projet.ServiceWindows.GestionCloture
 {
     public partial class GestionCloture : ServiceBase
     {
-        public BackgroundJobServer server;
-        private AccessMySql myAccess;
+        public BackgroundJobServer _server;
+        public MySqlServiceController _myAccess;
+        public UpdateFicheController _updater;
+
 
         public GestionCloture()
         {
@@ -28,26 +31,31 @@ namespace Projet.ServiceWindows.GestionCloture
 
             //Configuration du Hangfire
             GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["ConnectToHangfire"].ConnectionString));
-            myAccess = AccessMySql.GetInstance(ConfigurationManager.ConnectionStrings["ConnectToGsbFrais"].ConnectionString);
+
+            _myAccess = MySqlServiceController.GetInstance(ConfigurationManager.ConnectionStrings["ConnectToGsbFrais"].ConnectionString);
+            _updater = new UpdateFicheController(_myAccess);
+            
+
         }
 
         protected override void OnStart(string[] args)
         {
+
             //Configuration des options pour le serveur de job d'Hangfire
+
             var options = new BackgroundJobServerOptions
             {
-                ServerName = "GestionCloture.Hangfire",
+                ServerName = "GestionClotureHangfire",
                 Queues = new[] { "critical", "default" },
                 WorkerCount = 3
             };
-            server = new BackgroundJobServer(options);
-
-
+            _server = new BackgroundJobServer(options);
+            BackgroundJob.Enqueue<UpdateFicheController>((n) => _updater.UpdateFicheService());
         }
 
         protected override void OnStop()
         {
-            server.Dispose();
+            _server.Dispose();
         }
 
     }
