@@ -7,8 +7,8 @@
     <ProjectGuid>{C8304BAD-B2E3-4215-BB52-5561EE77482A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Projet.ServiceWindows.GestionCloture.Lib</RootNamespace>
-    <AssemblyName>Projet.ServiceWindows.GestionCloture.Lib</AssemblyName>
+    <RootNamespace>Projet.ServiceWindows.GestionCloture.GsbClasse</RootNamespace>
+    <AssemblyName>Projet.ServiceWindows.GestionCloture.GsbClasse</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

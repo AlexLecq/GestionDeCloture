@@ -28,7 +28,8 @@
           "Hangfire.MySql.Core": "2.1.8",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "Projet.ServiceWindows.GestionCloture.Service": "1.0.0"
         },
         "runtime": {
           "Projet.ServiceWindows.GestionCloture.Hangfire.dll": {}
@@ -370,6 +371,45 @@
         }
       },
       "System.Reflection.TypeExtensions/4.4.0": {},
+      "Projet.ServiceWindows.GestionCloture.Classe/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "8.0.15.0",
+          "Google.Protobuf": "3.5.1.0"
+        },
+        "runtime": {
+          "Projet.ServiceWindows.GestionCloture.GsbClasse.dll": {}
+        },
+        "compile": {
+          "Projet.ServiceWindows.GestionCloture.GsbClasse.dll": {}
+        }
+      },
+      "Projet.ServiceWindows.GestionCloture.Service/1.0.0": {
+        "dependencies": {
+          "Projet.ServiceWindows.GestionCloture.Classe": "1.0.0"
+        },
+        "runtime": {
+          "Projet.ServiceWindows.GestionCloture.exe": {}
+        },
+        "compile": {
+          "Projet.ServiceWindows.GestionCloture.exe": {}
+        }
+      },
+      "MySql.Data.Reference/8.0.15.0": {
+        "runtime": {
+          "MySql.Data.dll": {
+            "assemblyVersion": "8.0.15.0",
+            "fileVersion": "8.0.15.0"
+          }
+        }
+      },
+      "Google.Protobuf.Reference/3.5.1.0": {
+        "runtime": {
+          "Google.Protobuf.dll": {
+            "assemblyVersion": "3.5.1.0",
+            "fileVersion": "3.5.1.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -3464,6 +3504,26 @@
       "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
       "path": "system.reflection.typeextensions/4.4.0",
       "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
+    },
+    "Projet.ServiceWindows.GestionCloture.Classe/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Projet.ServiceWindows.GestionCloture.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MySql.Data.Reference/8.0.15.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf.Reference/3.5.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

@@ -9,45 +9,31 @@ using System.Timers;
 
 namespace Projet.ServiceWindows.GestionCloture.Controllers
 {
-    public class UpdateFicheController
+    public static class UpdateFicheController
     {
-        private MySqlServiceController _myAccess;
-
-        public UpdateFicheController(MySqlServiceController myAccess)
+        [Queue("critical")]
+        public static void UpdateFicheService(Object source, System.Timers.ElapsedEventArgs e)
         {
-            this._myAccess = myAccess;
-           
+            BackgroundJob.Enqueue(() => UpdatePourCloture());
+            BackgroundJob.Enqueue(() => UpdatePourRemboursement());
         }
 
-        public void UpdateFicheService()
+        public static void UpdatePourCloture()
         {
-            Timer timer = new Timer()
-            {
-                AutoReset = true,
-                Enabled = false,
-                Interval = 5000
-            };
-
-            timer.Elapsed += UpdatePourCloture;
-
-            timer.Start();
-        }
-
-        public void UpdatePourCloture(Object source, System.Timers.ElapsedEventArgs e)
-        {
-            _myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent(new DateTime(2019, 04, 12)));
-        }
-
-        public void UpdatePourRemboursement(Object source, System.Timers.ElapsedEventArgs e)
-        {
+            if (GestionDate.IsEntre(1, 14))
+                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent(new DateTime(2019, 04, 12)));
+            else
+                throw new Exception("On est le  " + DateTime.Now.ToString());
 
         }
 
-        public static bool GetTest()
+        public static void UpdatePourRemboursement()
         {
-            return true;
-        }
+            if(GestionDate.IsEntre(10 , 30))
+                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent(new DateTime(2019, 03, 24)));
+            else
+                throw new Exception("On est le  " + DateTime.Now.ToString());
 
-        
+        }
     }
 }

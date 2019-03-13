@@ -11,9 +11,11 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
     {
         private static MySqlServiceController _instance;
 
+        private string _connectionString;
+
         private MySqlServiceController(string connectionString) : base(connectionString)
         {
-
+            this._connectionString = connectionString;
         }
 
         /// <summary>
@@ -37,7 +39,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
 
         public void UpdateEtatFiche(string idEtatHasChange,string idEtatToChange, string moisPrecedent)
         {
-            if (idEtatHasChange != null)
+            if (idEtatHasChange != null && idEtatToChange != null)
             {
                 List<Dictionary<string,string>> fichesToUp = GetFicheMoisPrecedent(idEtatHasChange, moisPrecedent);
                 if (fichesToUp != null)

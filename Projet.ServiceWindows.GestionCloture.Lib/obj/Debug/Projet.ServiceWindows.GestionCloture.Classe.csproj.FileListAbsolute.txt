@@ -1,10 +1,10 @@
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Projet.ServiceWindows.GestionCloture.Lib.dll
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Projet.ServiceWindows.GestionCloture.Lib.pdb
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Google.Protobuf.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\MySql.Data.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Google.Protobuf.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\MySql.Data.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Classe.csproj.CoreCompileInputs.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Classe.csproj.CopyComplete
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.dll
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Lib.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb

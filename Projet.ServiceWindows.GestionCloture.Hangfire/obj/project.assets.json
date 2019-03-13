@@ -4518,6 +4518,27 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Projet.ServiceWindows.GestionCloture.Classe/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Projet.ServiceWindows.GestionCloture.Classe.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projet.ServiceWindows.GestionCloture.Classe.dll": {}
+        }
+      },
+      "Projet.ServiceWindows.GestionCloture.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Projet.ServiceWindows.GestionCloture.Classe": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projet.ServiceWindows.GestionCloture.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projet.ServiceWindows.GestionCloture.Service.dll": {}
+        }
       }
     }
   },
@@ -12339,6 +12360,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Projet.ServiceWindows.GestionCloture.Classe/1.0.0": {
+      "type": "project",
+      "path": "../Projet.ServiceWindows.GestionCloture.Lib/Projet.ServiceWindows.GestionCloture.Classe.csproj",
+      "msbuildProject": "../Projet.ServiceWindows.GestionCloture.Lib/Projet.ServiceWindows.GestionCloture.Classe.csproj"
+    },
+    "Projet.ServiceWindows.GestionCloture.Service/1.0.0": {
+      "type": "project",
+      "path": "../Projet.ServiceWindows.GestionCloture/Projet.ServiceWindows.GestionCloture.Service.csproj",
+      "msbuildProject": "../Projet.ServiceWindows.GestionCloture/Projet.ServiceWindows.GestionCloture.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12347,7 +12378,8 @@
       "Hangfire.MySql.Core >= 2.1.8",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Projet.ServiceWindows.GestionCloture.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12379,7 +12411,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj": {
+              "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

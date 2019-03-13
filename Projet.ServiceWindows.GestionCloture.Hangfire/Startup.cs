@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Hangfire;
 using Hangfire.Annotations;
+using Hangfire.Common;
 using Hangfire.Dashboard;
 using Hangfire.MySql;
 using Hangfire.MySql.Core;
@@ -54,4 +55,6 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
             return true;
         }
     }
+
+    
 }
