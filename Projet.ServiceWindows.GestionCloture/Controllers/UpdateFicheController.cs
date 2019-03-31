@@ -20,8 +20,8 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
 
         public static void UpdatePourCloture()
         {
-            if (GestionDate.IsEntre(1, 14))
-                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent(new DateTime(2019, 04, 12)));
+            if (GestionDate.IsEntre(1, 30))
+                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent(new DateTime(2019, 04, 5)));
             else
                 throw new Exception("On est le  " + DateTime.Now.ToString());
 
@@ -30,7 +30,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         public static void UpdatePourRemboursement()
         {
             if(GestionDate.IsEntre(10 , 30))
-                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent(new DateTime(2019, 03, 24)));
+                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent(new DateTime(2019, 03, 25)));
             else
                 throw new Exception("On est le  " + DateTime.Now.ToString());
 

@@ -34,7 +34,6 @@ namespace Projet.ServiceWindows.GestionCloture
 
             //Configuration du Hangfire
             GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = 0 });
-            
             GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["ConnectToHangfire"].ConnectionString));
             _myAccess = MySqlServiceController.GetInstance(ConfigurationManager.ConnectionStrings["ConnectToGsbFrais"].ConnectionString);
             _timer = new TimerService(new TimeSpan(0,0,30));
@@ -49,7 +48,6 @@ namespace Projet.ServiceWindows.GestionCloture
                 ServerName = "GestionClotureHangfire",
                 Queues = new[] { "critical", "default" },
                 WorkerCount = 1
-                
             };
             _server = new BackgroundJobServer(options);
 
