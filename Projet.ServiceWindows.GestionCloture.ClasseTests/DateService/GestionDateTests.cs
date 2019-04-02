@@ -1,12 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GestionDateTest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDateTest.Tests
+namespace Projet.ServiceWindows.GestionCloture.Classe.Tests
 {
     [TestClass()]
     public class GestionDateTests

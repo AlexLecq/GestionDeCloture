@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GestionDateTest
+namespace Projet.ServiceWindows.GestionCloture.Classe
 {
     /// <summary>
     /// Classe technique regroupant les méthodes de gestion de date
