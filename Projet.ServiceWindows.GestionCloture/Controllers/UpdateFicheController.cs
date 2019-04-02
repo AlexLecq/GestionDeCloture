@@ -32,7 +32,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         public static void UpdatePourCloture()
         {
             if (GestionDate.IsEntre(1, 10))
-                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent(new DateTime(2019, 04, 5)));
+                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent());
 
         }
 
@@ -42,7 +42,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         public static void UpdatePourRemboursement()
         {
             if(GestionDate.IsEntre(20 , 30))
-                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent(new DateTime(2019, 03, 25)));
+                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent());
 
         }
     }
