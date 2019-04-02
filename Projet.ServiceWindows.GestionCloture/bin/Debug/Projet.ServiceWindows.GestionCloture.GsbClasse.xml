@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projet.ServiceWindows.GestionCloture.GsbClasse</name>
+    </assembly>
+    <members>
+        <member name="T:GestionDateTest.GestionDate">
+            <summary>
+            Classe technique regroupant les méthodes de gestion de date
+            </summary>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.GetMoisPrecedent">
+            <summary>
+            Permet de récupérer le mois précedent à la date d'aujourd'hui
+            </summary>
+            <returns>The mois precedent.</returns>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.GetMoisPrecedent(System.DateTime)">
+            <summary>
+            Permet de récupérer le mois précédent de la date donné en paramètre
+            </summary>
+            <returns>The mois precedent.</returns>
+            <param name="time">Time.</param>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.GetMoisSuivant">
+            <summary>
+            Permet de récupérer le mois suivant de la date donné en paramètre
+            </summary>
+            <returns>The mois precedent.</returns>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.GetMoisSuivant(System.DateTime)">
+            <summary>
+            Permet de récupérer le mois suivant de la date donné en paramètre
+            </summary>
+            <returns></returns>
+            <param name="time">Time.</param>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.IsEntre(System.Int32,System.Int32)">
+            <summary>
+            Permet de vérifier si le jour d'aujourd'hui est compris dans un intervale donné
+            </summary>
+            <returns><c>true</c>, if entre was ised, <c>false</c> otherwise.</returns>
+            <param name="jour1">Jour1.</param>
+            <param name="jour2">Jour2.</param>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.IsEntre(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            Permet de vérifier si le jour de la date passé en paramètre est compris dans un intervale donné
+            </summary>
+            <returns><c>true</c>, if entre was ised, <c>false</c> otherwise.</returns>
+            <param name="jour1">Jour1.</param>
+            <param name="jour2">Jour2.</param>
+            <param name="jourToCheck">Jour to check.</param>
+        </member>
+        <member name="M:GestionDateTest.GestionDate.FormatNumber(System.Int32)">
+            <summary>
+            Permet d'ajouter un zéro au début d'un chiffre
+            </summary>
+            <returns></returns>
+            <param name="number"></param>
+        </member>
+        <member name="T:Projet.ServiceWindows.GestionCloture.Classe.MySqlService">
+            <summary>
+            Classe permettant l'accès à la base de données
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.Classe.MySqlService._connect">
+            <summary>
+            Propriétés de la classe AccessMySql
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.MySqlService.#ctor(System.String)">
+            <summary>
+            Constructeur privée de la classe 
+            </summary>
+            <param name="connectString"></param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.MySqlService.ExecuteQuery(System.String)">
+            <summary>
+            Permet d'exécuter les requêtes vers la BDD
+            </summary>
+            <param name="queryString"></param>
+        </member>
+    </members>
+</doc>

@@ -16,6 +16,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Projet.ServiceWindows.GestionCloture.Hangfire
 {
+    /// <summary>
+    /// Classe de configuration du service Hangfire
+    /// </summary>
     public class Startup
     {
 
@@ -24,14 +27,22 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
         {
             config = configuration;
         }
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
+        /// <summary>
+        /// Configuration du service Hangfire
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHangfire((n) => n.UseStorage(new MySqlStorage(config.GetConnectionString("ConnectToHangfire"))));
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// Configuration de l'environnement
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())

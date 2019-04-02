@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projet.ServiceWindows.GestionCloture</name>
+    </assembly>
+    <members>
+        <member name="T:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController">
+            <summary>
+            Controleur de la classe MySql, avec des méthodes propres à la solution développé
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController._instance">
+            <summary>
+            Instance de la classe MySqlServiceController
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController._connectionString">
+            <summary>
+            Chaine de connexion à la base de données
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController.#ctor(System.String)">
+            <summary>
+            Constructeur privé de la classe
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController.GetInstance(System.String)">
+            <summary>
+            Récupération de l'unique instance de la classe
+            </summary>
+            <param name="connectString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController.GetFicheMoisPrecedent(System.String,System.String)">
+            <summary>
+            Permet la récupération des fiches de frais du mois précédents 
+            </summary>
+            <param name="idEtat"></param>
+            <param name="moisPrecedent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController.UpdateEtatFiche(System.String,System.String,System.String)">
+            <summary>
+            Permet la mise à jour de l'etat d'une fiche de frais 
+            </summary>
+            <param name="idEtatHasChange"></param>
+            <param name="idEtatToChange"></param>
+            <param name="moisPrecedent"></param>
+        </member>
+        <member name="T:Projet.ServiceWindows.GestionCloture.Controllers.UpdateFicheController">
+            <summary>
+            Controleur permettant la mise à jour de l'état des fiches de frais 
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.UpdateFicheController.UpdateFicheService(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Méthode permettant d'éxecuter les requêtes de mis à jour
+            </summary>
+            <param name="source"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.UpdateFicheController.UpdatePourCloture">
+            <summary>
+            Permet de mettre à jour fiche en "Saisi en cours" à "Clôturé"
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Controllers.UpdateFicheController.UpdatePourRemboursement">
+            <summary>
+            Permet de mettre à jour les fiches "Validé" à "Remboursé"
+            </summary>
+        </member>
+        <member name="T:Projet.ServiceWindows.GestionCloture.GestionCloture">
+            <summary>
+            Classe principale du service windows
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.GestionCloture._server">
+            <summary>
+            Déclaration des services 
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.#ctor">
+            <summary>
+            Constructeur de la classe GestionCloture
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.OnStart(System.String[])">
+            <summary>
+            Action effectué au démarrage du service
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.OnStop">
+            <summary>
+            Action effectué à l'arrêt du service
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.GestionCloture.components">
+            <summary> 
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.InitializeComponent">
+            <summary> 
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.ProjectInstaller.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.ProjectInstaller.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.ProjectInstaller.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="T:Projet.ServiceWindows.GestionCloture.Services.TimerService">
+            <summary>
+            Service permettant de paramétrer le timing des requêtes
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.Services.TimerService._timer">
+            <summary>
+            Objet de type Timer
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Services.TimerService.#ctor(System.TimeSpan)">
+            <summary>
+            Constructeur de la classe TimerService
+            </summary>
+            <param name="temps"></param>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Services.TimerService.Start">
+            <summary>
+            Permet le lancement du service de Timing
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Services.TimerService.Stop">
+            <summary>
+            Permet d'arrêter le service de timing 
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Services.TimerService.ConvertToMilliseconds(System.TimeSpan)">
+            <summary>
+            Permet de convertir un temps de type "TimeSpan" en milliseconds
+            </summary>
+            <param name="temps"></param>
+            <returns>Temps en milliseconds</returns>
+        </member>
+    </members>
+</doc>

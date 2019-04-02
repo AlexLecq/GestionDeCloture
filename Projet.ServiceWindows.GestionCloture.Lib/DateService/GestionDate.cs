@@ -2,6 +2,9 @@
 
 namespace GestionDateTest
 {
+    /// <summary>
+    /// Classe technique regroupant les méthodes de gestion de date
+    /// </summary>
     public abstract class GestionDate
     {
         /// <summary>

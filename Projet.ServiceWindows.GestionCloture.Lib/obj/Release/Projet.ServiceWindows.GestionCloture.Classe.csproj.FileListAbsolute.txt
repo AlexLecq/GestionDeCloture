@@ -1,0 +1,11 @@
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\Google.Protobuf.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\MySql.Data.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\Google.Protobuf.xml
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\bin\Release\MySql.Data.xml
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Release\Projet.ServiceWindows.GestionCloture.Classe.csprojAssemblyReference.cache
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Release\Projet.ServiceWindows.GestionCloture.Classe.csproj.CoreCompileInputs.cache
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Release\Projet.ServiceWindows.GestionCloture.Classe.csproj.CopyComplete
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Release\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Release\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb

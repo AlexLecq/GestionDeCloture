@@ -9,6 +9,9 @@ using System.Windows.Forms;
 
 namespace Projet.ServiceWindows.GestionCloture.Classe
 {
+    /// <summary>
+    /// Classe permettant l'accès à la base de données
+    /// </summary>
     public class MySqlService
     {
         /// <summary>
