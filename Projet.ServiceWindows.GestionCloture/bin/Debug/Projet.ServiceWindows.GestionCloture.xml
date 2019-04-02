@@ -5,9 +5,7 @@
     </assembly>
     <members>
         <member name="T:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController">
-            <summary>
-            Controleur de la classe MySql, avec des méthodes propres à la solution développé
-            </summary>
+            <summary>Controleur de la classe MySql, avec des méthodes propres à la solution développé</summary>
         </member>
         <member name="F:Projet.ServiceWindows.GestionCloture.Controllers.MySqlServiceController._instance">
             <summary>

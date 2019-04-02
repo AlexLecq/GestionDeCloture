@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projet.ServiceWindows.GestionCloture.Controllers
 {
-    /// <summary>
-    /// Controleur de la classe MySql, avec des méthodes propres à la solution développé
-    /// </summary>
+    /// <summary>Controleur de la classe MySql, avec des méthodes propres à la solution développé</summary>
     public class MySqlServiceController : MySqlService
     {
         /// <summary>
