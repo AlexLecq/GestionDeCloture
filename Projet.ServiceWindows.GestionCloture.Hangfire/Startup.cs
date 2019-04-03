@@ -51,7 +51,6 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
             }
 
             List<IDashboardAuthorizationFilter> filters = new List<IDashboardAuthorizationFilter>();
-            filters.Add(new DontUseThisAuthorizationFilter());
             app.UseHangfireDashboard("/hangfire", new DashboardOptions { Authorization = filters });
 
             app.UseMvc();
@@ -59,13 +58,6 @@ namespace Projet.ServiceWindows.GestionCloture.Hangfire
         }
     }
 
-    public class DontUseThisAuthorizationFilter : IDashboardAuthorizationFilter
-    {
-        public bool Authorize([NotNull] DashboardContext context)
-        {
-            return true;
-        }
-    }
 
     
 }

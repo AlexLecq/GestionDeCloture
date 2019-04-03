@@ -17,7 +17,15 @@ namespace Projet.ServiceWindows.GestionCloture
         /// Déclaration des services 
         /// </summary>
         private BackgroundJobServer _server;
+
+        /// <summary>
+        /// Instance du controleur d'accès à la BDD
+        /// </summary>
         public static MySqlServiceController _myAccess;
+
+        /// <summary>
+        /// Instance du service de Timing
+        /// </summary>
         private TimerService _timer;
 
         /// <summary>
@@ -48,7 +56,7 @@ namespace Projet.ServiceWindows.GestionCloture
             {
                 ServerName = "GestionClotureHangfire",
                 Queues = new[] { "critical", "default" },
-                WorkerCount = 1
+                WorkerCount = 3
             };
             _server = new BackgroundJobServer(options);
 
@@ -62,6 +70,7 @@ namespace Projet.ServiceWindows.GestionCloture
         {
             _server.Dispose();
             _timer.Stop();
+            
         }
 
         

@@ -4,38 +4,38 @@
         <name>Projet.ServiceWindows.GestionCloture.GsbClasse</name>
     </assembly>
     <members>
-        <member name="T:GestionDateTest.GestionDate">
+        <member name="T:Projet.ServiceWindows.GestionCloture.Classe.GestionDate">
             <summary>
             Classe technique regroupant les méthodes de gestion de date
             </summary>
         </member>
-        <member name="M:GestionDateTest.GestionDate.GetMoisPrecedent">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.GetMoisPrecedent">
             <summary>
             Permet de récupérer le mois précedent à la date d'aujourd'hui
             </summary>
             <returns>The mois precedent.</returns>
         </member>
-        <member name="M:GestionDateTest.GestionDate.GetMoisPrecedent(System.DateTime)">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.GetMoisPrecedent(System.DateTime)">
             <summary>
             Permet de récupérer le mois précédent de la date donné en paramètre
             </summary>
             <returns>The mois precedent.</returns>
             <param name="time">Time.</param>
         </member>
-        <member name="M:GestionDateTest.GestionDate.GetMoisSuivant">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.GetMoisSuivant">
             <summary>
             Permet de récupérer le mois suivant de la date donné en paramètre
             </summary>
             <returns>The mois precedent.</returns>
         </member>
-        <member name="M:GestionDateTest.GestionDate.GetMoisSuivant(System.DateTime)">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.GetMoisSuivant(System.DateTime)">
             <summary>
             Permet de récupérer le mois suivant de la date donné en paramètre
             </summary>
             <returns></returns>
             <param name="time">Time.</param>
         </member>
-        <member name="M:GestionDateTest.GestionDate.IsEntre(System.Int32,System.Int32)">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.IsEntre(System.Int32,System.Int32)">
             <summary>
             Permet de vérifier si le jour d'aujourd'hui est compris dans un intervale donné
             </summary>
@@ -43,7 +43,7 @@
             <param name="jour1">Jour1.</param>
             <param name="jour2">Jour2.</param>
         </member>
-        <member name="M:GestionDateTest.GestionDate.IsEntre(System.Int32,System.Int32,System.DateTime)">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.IsEntre(System.Int32,System.Int32,System.DateTime)">
             <summary>
             Permet de vérifier si le jour de la date passé en paramètre est compris dans un intervale donné
             </summary>
@@ -52,7 +52,7 @@
             <param name="jour2">Jour2.</param>
             <param name="jourToCheck">Jour to check.</param>
         </member>
-        <member name="M:GestionDateTest.GestionDate.FormatNumber(System.Int32)">
+        <member name="M:Projet.ServiceWindows.GestionCloture.Classe.GestionDate.FormatNumber(System.Int32)">
             <summary>
             Permet d'ajouter un zéro au début d'un chiffre
             </summary>

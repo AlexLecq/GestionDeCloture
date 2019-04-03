@@ -1,4 +1,4 @@
-﻿using GestionDateTest;
+﻿using Projet.ServiceWindows.GestionCloture.Classe;
 using Hangfire;
 using System;
 using System.Collections.Generic;
@@ -22,8 +22,11 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         [Queue("critical")]
         public static void UpdateFicheService(Object source, System.Timers.ElapsedEventArgs e)
         {
-            BackgroundJob.Enqueue(() => UpdatePourCloture());
-            BackgroundJob.Enqueue(() => UpdatePourRemboursement());
+            if (GestionDate.IsEntre(1, 10))
+                BackgroundJob.Enqueue(() => UpdatePourCloture());
+
+            if (GestionDate.IsEntre(20, 30))
+                BackgroundJob.Enqueue(() => UpdatePourRemboursement());
         }
 
         /// <summary>
@@ -31,9 +34,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         /// </summary>
         public static void UpdatePourCloture()
         {
-            if (GestionDate.IsEntre(1, 10))
-                GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent());
-
+            GestionCloture._myAccess.UpdateEtatFiche("CR", "CL", GestionDate.GetMoisPrecedent());
         }
 
         /// <summary>
@@ -41,9 +42,7 @@ namespace Projet.ServiceWindows.GestionCloture.Controllers
         /// </summary>
         public static void UpdatePourRemboursement()
         {
-            if(GestionDate.IsEntre(20 , 30))
-                GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent());
-
+            GestionCloture._myAccess.UpdateEtatFiche("VA", "RB", GestionDate.GetMoisPrecedent());
         }
     }
 }

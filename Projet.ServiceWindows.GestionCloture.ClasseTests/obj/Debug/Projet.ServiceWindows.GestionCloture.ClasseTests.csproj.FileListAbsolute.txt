@@ -5,6 +5,7 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\MySql.Data.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\Google.Protobuf.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\MySql.Data.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\Google.Protobuf.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
@@ -13,4 +14,3 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\obj\Debug\Projet.ServiceWindows.GestionCloture.ClasseTests.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\obj\Debug\Projet.ServiceWindows.GestionCloture.ClasseTests.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\obj\Debug\Projet.ServiceWindows.GestionCloture.ClasseTests.pdb
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.ClasseTests\bin\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.xml

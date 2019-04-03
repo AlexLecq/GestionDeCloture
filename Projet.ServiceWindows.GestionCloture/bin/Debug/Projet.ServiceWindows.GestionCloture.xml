@@ -78,6 +78,16 @@
             Déclaration des services 
             </summary>
         </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.GestionCloture._myAccess">
+            <summary>
+            Instance du controleur d'accès à la BDD
+            </summary>
+        </member>
+        <member name="F:Projet.ServiceWindows.GestionCloture.GestionCloture._timer">
+            <summary>
+            Instance du service de Timing
+            </summary>
+        </member>
         <member name="M:Projet.ServiceWindows.GestionCloture.GestionCloture.#ctor">
             <summary>
             Constructeur de la classe GestionCloture
