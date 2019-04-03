@@ -176,5 +176,15 @@
             <param name="temps"></param>
             <returns>Temps en milliseconds</returns>
         </member>
+        <member name="T:Projet.ServiceWindows.GestionCloture.Tools.ConfigWindowsService">
+            <summary>
+            Classe permettant de configurer le Service Windows
+            </summary>
+        </member>
+        <member name="M:Projet.ServiceWindows.GestionCloture.Tools.ConfigWindowsService.ConfigTimeout">
+            <summary>
+            Méthode permettant de configurer le timeout du service windows
+            </summary>
+        </member>
     </members>
 </doc>

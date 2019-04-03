@@ -9,3 +9,4 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Classe.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Lib\obj\Debug\Projet.ServiceWindows.GestionCloture.Classe.csprojAssemblyReference.cache

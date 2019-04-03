@@ -35,6 +35,9 @@ namespace Projet.ServiceWindows.GestionCloture
         {
             InitializeComponent();
 
+            //Configuration du Timeout
+            Tools.ConfigWindowsService.ConfigTimeout();
+
             //Configuration du Hangfire
             GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = 0 });
             GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(ConfigurationManager.ConnectionStrings["ConnectToHangfire"].ConnectionString));

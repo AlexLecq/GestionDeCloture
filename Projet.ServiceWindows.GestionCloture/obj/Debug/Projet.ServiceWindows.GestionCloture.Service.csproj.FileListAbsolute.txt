@@ -146,3 +146,4 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.Service.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.exe
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Debug\Projet.ServiceWindows.GestionCloture.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Tulpep.NotificationWindow.dll
