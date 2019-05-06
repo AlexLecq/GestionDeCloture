@@ -9,5 +9,15 @@ Pour répondre à ce besoin, nous avons utiliser un service windows.
 ## Technologies
 Voici les technologies utilisés durant cette mission :
 - Le framewrok .NET avec le langage C#
+
 - Service Windows
+
 - Hangfire, un outil de monitoring
+
+  
+
+  > La Documentation Technique se situe dans le dossier "HELP" 
+
+  ## Productions
+
+  Afin d’automatiser la mise à jour de l’état des fiches de frais, un service windows est mis en place à l’aide des technologies de Microsoft .NET et le langage C#. La solution est composée d’une Bibliothèque de classe réutilisable, ainsi que sa Bibliothèque de classe tests, comportant la classe d’accès à la base de données et d’une classe permettant la gestion des dates. Elle est aussi composé du service en lui même, lui comporte les différents Services et Contrôleurs utilisé pour le bon fonctionnement de l’application. Et enfin, le service Hangfire hébergé avec ASP .NET Core, qui permet de mettre un visuel sur les requêtes envoyées et de voir les éventuelles erreurs dans le but d’avoir un débogage optimal. La configuration de la chaîne de connexion, de la base de données, se fait grâce au fichier de configuration de la solution « App.config » pour le service, et du fichier « appsettings.json » pour Hangfire.
