@@ -50,3 +50,18 @@ Les paramètres affectés sont :
    logfile = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.InstallLog
    assemblypath = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe
 Restauration de l'état précédent du journal des événements pour la source GestionCloture.
+Installation de l'assembly 'C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   i = 
+   assemblypath = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe
+   logfile = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.InstallLog
+Installation du service GestionCloture en cours...
+Le service GestionCloture a été installé avec succès.
+Création d'une source EventLog GestionCloture dans le journal Application...
+Validation de l'assembly 'C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   i = 
+   assemblypath = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.exe
+   logfile = C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Projet.ServiceWindows.GestionCloture.InstallLog

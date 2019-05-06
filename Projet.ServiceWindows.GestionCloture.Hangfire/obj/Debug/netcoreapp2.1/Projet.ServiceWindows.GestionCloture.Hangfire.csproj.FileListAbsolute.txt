@@ -8,14 +8,11 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.GsbClasse.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\MySql.Data.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Google.Protobuf.dll
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.pdb
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.xml
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.exe.config
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.GsbClasse.pdb
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.GsbClasse.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\MySql.Data.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Google.Protobuf.xml
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.csprojAssemblyReference.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.csproj.CoreCompileInputs.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.RazorAssemblyInfo.cache
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.RazorAssemblyInfo.cs
@@ -25,3 +22,6 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\bin\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.exe.config
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture.Hangfire\obj\Debug\netcoreapp2.1\Projet.ServiceWindows.GestionCloture.Hangfire.csprojAssemblyReference.cache

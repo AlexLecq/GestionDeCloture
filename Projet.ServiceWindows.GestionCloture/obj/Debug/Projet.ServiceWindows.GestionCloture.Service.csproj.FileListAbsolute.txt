@@ -102,7 +102,6 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Hangfire.Core.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Hangfire.MySql.Core.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Hangfire.SqlServer.dll
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.Hosting.dll
@@ -122,7 +121,6 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Dapper.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Hangfire.Core.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Hangfire.SqlServer.xml
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Debug\Microsoft.Owin.Hosting.xml

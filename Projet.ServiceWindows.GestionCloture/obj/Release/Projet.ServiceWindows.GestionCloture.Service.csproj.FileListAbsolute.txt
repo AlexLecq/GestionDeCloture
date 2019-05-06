@@ -101,7 +101,6 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Hangfire.Core.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Hangfire.MySql.Core.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Hangfire.SqlServer.dll
-C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Microsoft.Owin.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Microsoft.Owin.Hosting.dll
@@ -144,3 +143,4 @@ C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceW
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Release\Projet.ServiceWindows.GestionCloture.Service.csproj.CopyComplete
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Release\Projet.ServiceWindows.GestionCloture.exe
 C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\obj\Release\Projet.ServiceWindows.GestionCloture.pdb
+C:\Users\alec6\source\repos\Projet.ServiceWindows.GestionCloture\Projet.ServiceWindows.GestionCloture\bin\Release\Tulpep.NotificationWindow.dll

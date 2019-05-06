@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Hangfire\\Projet.ServiceWindows.GestionCloture.Hangfire.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Hangfire\\Projet.ServiceWindows.GestionCloture.Hangfire.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Hangfire\\Projet.ServiceWindows.GestionCloture.Hangfire.csproj",
+        "projectName": "Projet.ServiceWindows.GestionCloture.Hangfire",
+        "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Hangfire\\Projet.ServiceWindows.GestionCloture.Hangfire.csproj",
+        "packagesPath": "C:\\Users\\alec6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Hangfire\\obj\\publish\\win-x64\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alec6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj": {
+                "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.6.22, )"
+            },
+            "Hangfire.MySql.Core": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.9, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.9, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Lib\\Projet.ServiceWindows.GestionCloture.Classe.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Lib\\Projet.ServiceWindows.GestionCloture.Classe.csproj",
+        "projectName": "Projet.ServiceWindows.GestionCloture.Classe",
+        "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Lib\\Projet.ServiceWindows.GestionCloture.Classe.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj",
+        "projectName": "Projet.ServiceWindows.GestionCloture.Service",
+        "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Service.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Lib\\Projet.ServiceWindows.GestionCloture.Classe.csproj": {
+                "projectPath": "C:\\Users\\alec6\\source\\repos\\Projet.ServiceWindows.GestionCloture\\Projet.ServiceWindows.GestionCloture.Lib\\Projet.ServiceWindows.GestionCloture.Classe.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}
